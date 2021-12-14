@@ -1,31 +1,46 @@
 body {
-  height: 150vh;
+  height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1.5fr 10fr 13fr 10fr 7fr 1fr;
-  grid-template-areas: "a" "b" "c" "d" "e" "f";
+  /* grid-template-rows: 1.5fr 8fr 11fr 8fr 1fr 1fr; */
+  grid-template-rows: 50px 350px 460px 250px 300px 75px;
+  grid-template-areas: "a" "b" "c" "e" "f" "g";
   background-color: #1f2937;
 }
 
 /* nav */
 nav {
   grid-area: a;
-  display: inline-flex;
   padding-left: 150px;
   padding-right: 150px;
   height: 5%;
   background-color: #1f2937;
   color: white;
+  margin-right: 5px;
+}
+
+nav img {
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding-left: 150px;
+}
+
+.links-right {
+  display: inline-flex;
+  float: right;
+  margin-right: 165px;
 }
 
 ul {
   list-style: none;
-  display: flex;
-  align-items: flex-end;
+  /* display: flex; */
   gap: 10px; /* Certain gap between links, but not words necessarily */
 }
 
@@ -49,6 +64,13 @@ header {
 
 .website-desc {
   margin-top: -27px;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
 }
 
 img {
@@ -87,7 +109,7 @@ main {
 }
 
 .image-desc {
-  margin-top: -10px;
+  margin-top: 20px;
   color: grey;
   text-align: center;
   font-size: 13px;
@@ -103,20 +125,31 @@ button {
 
 /* saying */
 .saying {
-  grid-area: d;
-  background-color: pink;
+  grid-area: e;
+  background-color: rgb(224, 224, 224);
   padding-left: 150px;
   padding-right: 150px;
+}
+
+.wisedom {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 90px;
+  font-style: italic;
+}
+
+h5 {
+  float: right;
+  margin-right: 290px;
 }
 
 /* action-call */
 .action-call {
   position: relative;
-  grid-area: d;
+  grid-area: f;
   background-color: white;
   padding-left: 150px;
   padding-right: 150px;
-  border: 1px solid red;
 }
 
 .box {
@@ -138,7 +171,7 @@ button {
 
 h4 {
   color: white;
-  margin-top: 15px;
+  margin-top: 20px;
   padding-top: 10px;
 }
 
@@ -156,12 +189,12 @@ p {
 
 /* footer */
 .footer {
-  grid-area: e;
+  grid-area: g;
   background-color: #1f2937;
 }
 
 .footer-text {
   color: white;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
