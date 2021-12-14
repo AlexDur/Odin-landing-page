@@ -7,7 +7,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   /* grid-template-rows: 1.5fr 8fr 11fr 8fr 1fr 1fr; */
-  grid-template-rows: 50px 350px 460px 250px 300px 75px;
+  grid-template-rows: 50px 370px 460px 250px 300px 75px;
   grid-template-areas: "a" "b" "c" "e" "f" "g";
   background-color: #1f2937;
 }
@@ -27,9 +27,10 @@ nav img {
   height: 50px;
   width: 50px;
   margin-top: 20px;
-  background-color: white;
   border-radius: 5px;
-  padding-left: 150px;
+  margin-left: 150px;
+  background-color: white;
+  padding: 3px;
 }
 
 .links-right {
@@ -40,8 +41,12 @@ nav img {
 
 ul {
   list-style: none;
-  /* display: flex; */
+
   gap: 10px; /* Certain gap between links, but not words necessarily */
+}
+
+li {
+  margin: 10px;
 }
 
 /* header */
@@ -58,7 +63,7 @@ header {
   padding-right: 150px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 75px;
+  margin-top: 100px;
   gap: 50px;
 }
 
@@ -66,11 +71,20 @@ header {
   margin-top: -27px;
 }
 
+h2 {
+  line-height: 35px;
+}
+
 h3 {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 80px;
+}
+
+.website-desc p {
+  margin-top: -30px;
+  font-size: 14px;
 }
 
 img {
@@ -105,7 +119,7 @@ main {
   height: 150px;
   width: 150px;
   border-radius: 10%;
-  border: 2px solid #3882f6;
+  border: 3.5px solid #3882f6;
 }
 
 .image-desc {
@@ -118,9 +132,10 @@ main {
 button {
   background-color: #3882f6;
   color: white;
-  padding: 3px 10px 3px 10px;
+  padding: 5px 15px 5px 15px;
   border-radius: 7%;
   box-shadow: none;
+  border: #3882f6;
 }
 
 /* saying */
@@ -155,7 +170,7 @@ h5 {
 .box {
   position: absolute;
   width: 60%;
-  height: 30%;
+  height: 35%;
   background-color: #3882f6;
   border-radius: 10px;
   place-self: inherit;
@@ -171,12 +186,13 @@ h5 {
 
 h4 {
   color: white;
-  margin-top: 20px;
+  margin-top: 25px;
   padding-top: 10px;
 }
 
 p {
-  margin-top: -17px;
+  margin-top: -20px;
+  font-size: 14px;
 }
 
 .box button {
