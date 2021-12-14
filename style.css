@@ -1,54 +1,58 @@
 body {
-  height: 150vh;
+  height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h3 {
-  color: #1f2937;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.photo-collection {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 40%;
-}
-
-.gridItem {
-  border: 2px solid #3882f6;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1.5fr 10fr 20fr 20fr 10fr 2fr;
-  grid-template-areas: "a" "b" "c" "d" "e" "f";
+  /* grid-template-rows: 1.5fr 8fr 11fr 8fr 1fr 1fr; */
+  grid-template-rows: 50px 370px 460px 250px 300px 75px;
+  grid-template-areas: "a" "b" "c" "e" "f" "g";
   background-color: #1f2937;
 }
 
+/* nav */
 nav {
   grid-area: a;
-  display: inline-flex;
   padding-left: 150px;
   padding-right: 150px;
   height: 5%;
   background-color: #1f2937;
   color: white;
+  margin-right: 5px;
+}
+
+nav img {
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+  margin-left: 240px;
+  background-color: white;
+  padding: 3px;
+}
+
+.links-right {
+  display: inline-flex;
+  float: right;
+  margin-right: 250px;
 }
 
 ul {
   list-style: none;
-  display: flex;
-  align-items: flex-end;
+
   gap: 10px; /* Certain gap between links, but not words necessarily */
 }
 
+li {
+  margin: 10px;
+}
+
+/* header */
 header {
   flex-direction: row;
-  width: 60%;
+  width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* border: 1px solid white; */
@@ -57,9 +61,9 @@ header {
   color: white;
   padding-left: 150px;
   padding-right: 150px;
-  margin-left: auto;
+  margin-left: 240px;
   margin-right: auto;
-  margin-top: 75px;
+  margin-top: 100px;
   gap: 50px;
 }
 
@@ -67,46 +71,146 @@ header {
   margin-top: -27px;
 }
 
-.image {
+h2 {
+  line-height: 35px;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.website-desc p {
+  margin-top: -30px;
+  font-size: 14px;
+}
+
+img {
   overflow: hidden;
-  height: 10px;
-  width: 10px;
+  height: 175px;
+  width: 400px;
+}
+
+/* main */
+main {
+  grid-area: c;
+  background-color: white;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.photo-collection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 60%;
+  gap: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.gridItem {
+  width: 150px;
+}
+
+.gridItem img {
+  height: 150px;
+  width: 150px;
+  border-radius: 10%;
+  border: 3.5px solid #3882f6;
+}
+
+.image-desc {
+  margin-top: 20px;
+  color: grey;
+  text-align: center;
+  font-size: 13px;
 }
 
 button {
   background-color: #3882f6;
   color: white;
-  padding: 3px 10px 3px 10px;
-  border-radius: 10%;
+  padding: 5px 15px 5px 15px;
+  border-radius: 7%;
   box-shadow: none;
+  border: #3882f6;
 }
 
-main {
-  grid-area: c;
-  background-color: red;
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
+/* saying */
 .saying {
-  grid-area: d;
-  background-color: pink;
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
-.action-call {
-  grid-area: d;
-  background-color: green;
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
-.footer {
   grid-area: e;
+  background-color: rgb(224, 224, 224);
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.wisedom {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 90px;
+  font-style: italic;
+}
+
+h5 {
+  float: right;
+  margin-right: 170px;
+}
+
+/* action-call */
+.action-call {
+  position: relative;
+  grid-area: f;
+  background-color: white;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.box {
+  position: absolute;
+  width: 60%;
+  height: 35%;
+  background-color: #3882f6;
+  border-radius: 10px;
+  place-self: inherit;
+  margin: 100px 220px 100px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.action-text {
+  color: white;
+  padding-left: 100px;
+}
+
+h4 {
+  color: white;
+  margin-top: 25px;
+  padding-top: 10px;
+}
+
+p {
+  margin-top: -20px;
+  font-size: 14px;
+}
+
+.box button {
+  width: 100px;
+  border: 1px solid white;
+  margin: 35px;
+  margin-right: 80px;
+  border-radius: 6px;
+}
+
+/* footer */
+.footer {
+  grid-area: g;
   background-color: #1f2937;
-  color: yellow;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.footer-text {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
 }
