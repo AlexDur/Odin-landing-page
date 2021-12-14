@@ -28,7 +28,7 @@ nav img {
   width: 50px;
   margin-top: 20px;
   border-radius: 5px;
-  margin-left: 150px;
+  margin-left: 240px;
   background-color: white;
   padding: 3px;
 }
@@ -36,7 +36,7 @@ nav img {
 .links-right {
   display: inline-flex;
   float: right;
-  margin-right: 165px;
+  margin-right: 250px;
 }
 
 ul {
@@ -52,7 +52,7 @@ li {
 /* header */
 header {
   flex-direction: row;
-  width: 60%;
+  width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* border: 1px solid white; */
@@ -61,7 +61,7 @@ header {
   color: white;
   padding-left: 150px;
   padding-right: 150px;
-  margin-left: auto;
+  margin-left: 240px;
   margin-right: auto;
   margin-top: 100px;
   gap: 50px;
@@ -174,7 +174,7 @@ h5 {
   background-color: #3882f6;
   border-radius: 10px;
   place-self: inherit;
-  margin: 100px 150px 100px 150px;
+  margin: 100px 220px 100px;
   display: grid;
   grid-template-columns: 4fr 1fr;
 }
